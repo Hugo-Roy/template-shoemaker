@@ -1,0 +1,21 @@
+@use 'src/styles/vars';
+
+.nav{
+  width: 80%;
+  position: absolute;
+  top: 50px;
+  left: 50px * 2;
+  &__list{ 
+    display: flex;
+    justify-content: flex-start;
+
+    &__item{
+      padding-right: 70px;
+      font-size: vars.$navFontSize;
+
+      &__link{
+
+      }
+    }
+  }
+}
