@@ -1,7 +1,9 @@
 @use 'src/styles/vars';
 
 .services{
-  margin: vars.$gutter * 2 auto;
+  width: 100%;
+  height: 100vh;
+  padding-top: vars.$gutter * 2;
   color: vars.$altColor;
 
   &__h2{
@@ -13,11 +15,13 @@
 
     &__ul{
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
 
       &__li{
+        width: 370px;
         border: 3px solid vars.$altColor;
         border-radius: 5px;
+
         &__h3{
           font-size: vars.$navFontSize * 1.2;
           padding: vars.$gutter;
@@ -29,12 +33,18 @@
         }
 
         &__pServ{
-          width: 85%;
+          width: 80%;
           margin: auto;
           font-size: vars.$navFontSize / 1.2;
           padding-bottom: vars.$gutter;
         }
       }
     }
+  }
+
+  &__ex{
+    width: 65%;
+    margin: vars.$gutter * 3 auto 0 auto;
+    font-size: vars.$navFontSize * 1.2;
   }
 }

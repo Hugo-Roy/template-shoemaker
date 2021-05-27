@@ -6,6 +6,7 @@ import './styles.scss';
 import Nav from 'src/components/Nav';
 import Hero from 'src/components/Hero';
 import Services from 'src/components/Services';
+import Contact from 'src/components/Contact';
 
 // == Composant
 const App = () => (
@@ -16,6 +17,7 @@ const App = () => (
     </header>
     <main>
       <Services />
+      {/* <Contact /> */}
     </main>
   </div>
 );
