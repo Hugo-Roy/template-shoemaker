@@ -23,6 +23,7 @@ const Nav = ({ clicked, setClicked }) => {
             <a
               className="nav__list__item__link"
               href="#hero"
+              onClick={switchNav}
             >
               Accueil
             </a>
@@ -31,6 +32,7 @@ const Nav = ({ clicked, setClicked }) => {
             <a
               className="nav__list__item__link"
               href="#services"
+              onClick={switchNav}
             >
               Services
             </a>
@@ -39,6 +41,7 @@ const Nav = ({ clicked, setClicked }) => {
             <a
               className="nav__list__item__link"
               href="#contact"
+              onClick={switchNav}
             >
               Contact
             </a>
