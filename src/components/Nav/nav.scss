@@ -1,8 +1,8 @@
 @use 'src/styles/vars';
 
 .nav{
-  width: 80%;
-  position: absolute;
+  width: 100%;
+  position: fixed;
   top: 50px;
   left: 50px * 2;
   &__list{ 

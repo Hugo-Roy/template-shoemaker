@@ -4,7 +4,7 @@ import React from 'react';
 import './services.scss';
 
 const Services = () => (
-  <section className="services">
+  <section id="services" className="services">
     <h2 className="services__h2">Nos Services</h2>
     <div className="services__blocks">
       <ul className="services__blocks__ul">

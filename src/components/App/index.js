@@ -17,7 +17,7 @@ const App = () => (
     </header>
     <main>
       <Services />
-      {/* <Contact /> */}
+      <Contact />
     </main>
   </div>
 );

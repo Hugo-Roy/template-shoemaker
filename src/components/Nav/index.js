@@ -8,7 +8,7 @@ const Nav = () => (
       <li className="nav__list__item">
         <a
           className="nav__list__item__link"
-          href="#"
+          href="#hero"
         >
           Accueil
         </a>
@@ -16,7 +16,7 @@ const Nav = () => (
       <li className="nav__list__item">
         <a
           className="nav__list__item__link"
-          href="#"
+          href="#services"
         >
           Services
         </a>
@@ -24,7 +24,7 @@ const Nav = () => (
       <li className="nav__list__item">
         <a
           className="nav__list__item__link"
-          href="#"
+          href="#contact"
         >
           Contact
         </a>
