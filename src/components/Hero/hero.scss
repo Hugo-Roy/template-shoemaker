@@ -11,6 +11,11 @@
   background-size: auto;
   position: relative;
 
+  @include very-small{
+    background-position: 78%;
+    background-size: cover;
+  }
+
   &__title{
     width: 85%;
     font-size: vars.$titleSize * 1.5;
@@ -33,5 +38,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @include very-small{
+      top: 65%;
+    }
   }
 }
