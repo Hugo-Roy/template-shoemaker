@@ -1,0 +1,40 @@
+@use 'src/styles/vars';
+
+.services{
+  margin: vars.$gutter * 2 auto;
+  color: vars.$altColor;
+
+  &__h2{
+    font-size: vars.$titleSize;
+  }
+
+  &__blocks{
+    margin: vars.$gutter * 3;
+
+    &__ul{
+      display: flex;
+      justify-content: space-around;
+
+      &__li{
+        border: 3px solid vars.$altColor;
+        border-radius: 5px;
+        &__h3{
+          font-size: vars.$navFontSize * 1.2;
+          padding: vars.$gutter;
+        }
+
+        &__icon{
+          font-size: vars.$navFontSize * 5;
+          margin-bottom: vars.$gutter / 2;
+        }
+
+        &__pServ{
+          width: 85%;
+          margin: auto;
+          font-size: vars.$navFontSize / 1.2;
+          padding-bottom: vars.$gutter;
+        }
+      }
+    }
+  }
+}

@@ -5,6 +5,7 @@ import React from 'react';
 import './styles.scss';
 import Nav from 'src/components/Nav';
 import Hero from 'src/components/Hero';
+import Services from 'src/components/Services';
 
 // == Composant
 const App = () => (
@@ -13,6 +14,9 @@ const App = () => (
       <Hero />
       <Nav />
     </header>
+    <main>
+      <Services />
+    </main>
   </div>
 );
 
