@@ -4,7 +4,7 @@
 .contact{
   width: 100%;
   height: 100vh;
-  padding-top: vars.$gutter * 2;
+  padding-top: vars.$gutter * 3;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), vars.$altColor;
   color: vars.$mainTextColor;
 
@@ -20,7 +20,6 @@
 
   @include medium{
     padding-top: vars.$gutter * 3;
-    height: 100vh;
   }
 
   &__hh2{
@@ -32,7 +31,8 @@
   }
 
   &__box{
-    margin: vars.$gutter * 3;
+    height: 75%;
+    margin: vars.$gutter * 3 auto;
     display: flex;
     justify-content: space-around;
 
@@ -54,6 +54,12 @@
       flex-direction: column;
     }
 
+    @include large{
+      width: 95%;
+      margin: vars.$gutter auto 0 auto;
+      flex-direction: column;
+    }
+
     &__visit{
 
       &__hh3{
@@ -67,9 +73,16 @@
         @include small-only{
           font-size: vars.$navFontSize;
         }
+        
+        @include large{
+          font-size: vars.$navFontSize * 1.3;
+        }
       }
 
       &__map{
+        width: 500px;
+        height: 500px;
+
         @include very-small{
           width: 100%;
         }
@@ -81,12 +94,18 @@
         @include medium{
           width: 90%;
         }
+
+        @include large{
+          width: 85%;
+          height: 400px;
+        }
       }
     }
 
     &__infos{
       display: flex;
       flex-direction: column;
+      align-self: space-evenly;
 
       @include very-small{
         flex-direction: column-reverse;
@@ -100,7 +119,12 @@
 
       @include medium{
         flex-direction: column-reverse;
-        padding-top: vars.$gutter * 2;
+        padding-top: vars.$gutter * 4;
+      }
+
+      @include large{
+        flex-direction: column-reverse;
+        padding-top: vars.$gutter * 4;
       }
 
       &__hor{
@@ -123,6 +147,11 @@
             font-size: vars.$navFontSize;
             margin-bottom: vars.$gutter / 2;
             padding-bottom: 0;
+          }
+
+          @include large{
+            font-size: vars.$navFontSize * 1.5;
+            padding-bottom: vars.$gutter / 2;
           }
         }
 
@@ -151,6 +180,10 @@
               padding: 0;
               font-size: vars.$navFontSize / 1.2;
             }
+
+            @include large{
+              font-size: vars.$navFontSize * 1.2;
+            }
           }
         }
       }
@@ -174,11 +207,20 @@
             font-size: vars.$navFontSize;
             margin-bottom: vars.$gutter / 2;
           }
+
+          @include large{
+            margin-bottom: vars.$gutter;
+            font-size: vars.$navFontSize * 1.5;
+          }
         }
   
         &__num{
           margin: 0 auto;
           font-size: vars.$navFontSize * 1.2;
+        }
+
+        @include large{
+          margin: vars.$gutter * 2;
         }
       }
 
@@ -200,6 +242,10 @@
         }
 
         @include medium{
+          display: none;
+        }
+
+        @include large{
           display: none;
         }
       }
