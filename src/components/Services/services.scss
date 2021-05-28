@@ -6,16 +6,31 @@
   height: 100vh;
   padding-top: vars.$gutter * 2;
   color: vars.$altColor;
-  
+
   @include very-small{
     padding-top: vars.$gutter * 5;
     height: auto;
   }
+
+  @include small-only{
+    padding-top: vars.$gutter * 5;
+    height: auto;
+  }
+
+  @include medium{
+    padding-top: vars.$gutter * 3;
+    height: auto;
+  }
+
   &__h2{
     font-size: vars.$titleSize;
     position: relative;
 
     @include very-small{
+      font-size: vars.$titleSize / 1.2;
+    }
+
+    @include small-only{
       font-size: vars.$titleSize / 1.2;
     }
   }
@@ -25,6 +40,18 @@
 
     // TODO centrage after
     @include very-small{
+      content: "";
+      position: absolute;
+      top: 60px;
+      left: 28%;
+      background: vars.$altColor;
+      width: 150px;
+      height: 3px;
+      border-radius: 4px;
+      display: inline;
+    }
+
+    @include small-only{
       content: "";
       position: absolute;
       top: 60px;
@@ -45,11 +72,26 @@
       margin: vars.$gutter auto;
     }
 
+    @include small-only{
+      width: 95%;
+      margin: vars.$gutter auto;
+    }
+
+    @include medium{
+      width: 95%;
+      margin: vars.$gutter auto;
+    }
+
     &__ul{
       display: flex;
       justify-content: space-between;
 
       @include very-small{
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      @include small-only{
         flex-direction: column;
         justify-content: center;
       }
@@ -64,12 +106,33 @@
           border: none;
         }
 
+        @include small-only{
+          width: 100%;
+          border: none;
+        }
+
+        @include medium{
+          width: 33%;
+          height: 600px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+        }
+
         &__h3{
           font-size: vars.$navFontSize * 1.2;
           padding: vars.$gutter;
 
           @include very-small{
             font-size: vars.$navFontSize;
+          }
+
+          @include small-only{
+            font-size: vars.$navFontSize;
+          }
+
+          @include medium{
+            padding: 0;
           }
         }
 
@@ -80,6 +143,14 @@
           @include very-small{
             margin-bottom: vars.$gutter / 4;
           }
+
+          @include small-only{
+            margin-bottom: vars.$gutter / 4;
+          }
+
+          @include medium{
+            margin-bottom: 0;
+          }
         }
 
         &__pServ{
@@ -87,6 +158,11 @@
           margin: auto;
           font-size: vars.$navFontSize / 1.2;
           padding-bottom: vars.$gutter;
+
+          @include medium{
+            padding: 0;
+            margin: 0 auto;
+          }
         }
       }
     }
@@ -102,12 +178,35 @@
       font-size: vars.$navFontSize;
       position: relative;
     }
+
+    @include small-only{
+      margin: vars.$gutter auto;
+      font-size: vars.$navFontSize;
+      position: relative;
+    }
+
+    @include medium{
+      margin: vars.$gutter * 2 auto;
+      font-size: vars.$navFontSize;
+    }
   }
 
   &__ex::before{
     display: none;
 
     @include very-small{
+      content: "";
+      position: absolute;
+      top: -30px;
+      left: 15%;
+      background: vars.$altColor;
+      width: 150px;
+      height: 3px;
+      border-radius: 4px;
+      display: inline;
+    }
+
+    @include small-only{
       content: "";
       position: absolute;
       top: -30px;

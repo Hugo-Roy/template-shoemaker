@@ -13,6 +13,16 @@
     padding-top: vars.$gutter * 5;
   }
 
+  @include small-only{
+    height: auto;
+    padding-top: vars.$gutter * 5;
+  }
+
+  @include medium{
+    padding-top: vars.$gutter * 3;
+    height: 100vh;
+  }
+
   &__hh2{
     font-size: vars.$titleSize;
 
@@ -32,6 +42,18 @@
       flex-direction: column;
     }
 
+    @include small-only{
+      width: 95%;
+      margin: vars.$gutter auto 0 auto;
+      flex-direction: column;
+    }
+
+    @include medium{
+      width: 95%;
+      margin: vars.$gutter auto 0 auto;
+      flex-direction: column;
+    }
+
     &__visit{
 
       &__hh3{
@@ -41,11 +63,23 @@
         @include very-small{
           font-size: vars.$navFontSize;
         }
+
+        @include small-only{
+          font-size: vars.$navFontSize;
+        }
       }
 
       &__map{
         @include very-small{
           width: 100%;
+        }
+
+        @include small-only{
+          width: 100%;
+        }
+
+        @include medium{
+          width: 90%;
         }
       }
     }
@@ -57,6 +91,16 @@
       @include very-small{
         flex-direction: column-reverse;
         padding-top: vars.$gutter;
+      }
+
+      @include small-only{
+        flex-direction: column-reverse;
+        padding-top: vars.$gutter;
+      }
+
+      @include medium{
+        flex-direction: column-reverse;
+        padding-top: vars.$gutter * 2;
       }
 
       &__hor{
@@ -74,6 +118,12 @@
             margin-bottom: vars.$gutter / 2;
             padding-bottom: 0;
           }
+
+          @include small-only{
+            font-size: vars.$navFontSize;
+            margin-bottom: vars.$gutter / 2;
+            padding-bottom: 0;
+          }
         }
 
         &__u{
@@ -82,12 +132,22 @@
           @include very-small{
             padding-bottom: vars.$gutter * 2;
           }
+
+          @include small-only{
+            padding-bottom: vars.$gutter * 2;
+          }
+
           &__l{
             text-align: center;
             padding: vars.$gutter / 2;
             font-size: vars.$navFontSize;
 
             @include very-small{
+              padding: 0;
+              font-size: vars.$navFontSize / 1.2;
+            }
+
+            @include small-only{
               padding: 0;
               font-size: vars.$navFontSize / 1.2;
             }
@@ -104,8 +164,13 @@
 
         &__hhh3{
           font-size: vars.$navFontSize * 1.2;
-          
+
           @include very-small{
+            font-size: vars.$navFontSize;
+            margin-bottom: vars.$gutter / 2;
+          }
+
+          @include small-only{
             font-size: vars.$navFontSize;
             margin-bottom: vars.$gutter / 2;
           }
@@ -127,6 +192,14 @@
         left: 0;
 
         @include very-small{
+          display: none;
+        }
+
+        @include small-only{
+          display: none;
+        }
+
+        @include medium{
           display: none;
         }
       }

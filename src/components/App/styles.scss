@@ -7,6 +7,10 @@
   @include very-small{
     overflow-x: hidden;
   }
+
+  @include medium{
+    overflow-x: hidden;
+  }
 }
 
 main{

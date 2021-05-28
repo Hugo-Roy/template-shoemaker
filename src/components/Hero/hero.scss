@@ -16,6 +16,16 @@
     background-size: cover;
   }
 
+  @include small-only{
+    background-position: 78%;
+    background-size: cover;
+  }
+
+  @include medium{
+    background-position: 78%;
+    background-size: cover;
+  }
+
   &__title{
     width: 85%;
     font-size: vars.$titleSize * 1.5;
@@ -26,6 +36,10 @@
     transform: translate(-50%, -50%);
 
     @include very-small{
+      font-size: vars.$titleSize;
+    }
+
+    @include small-only{
       font-size: vars.$titleSize;
     }
   }
@@ -41,6 +55,14 @@
 
     @include very-small{
       top: 65%;
+    }
+
+    @include small-only{
+      top: 65%;
+    }
+
+    @include medium{
+      top: 55%;
     }
   }
 }
